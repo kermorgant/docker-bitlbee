@@ -5,9 +5,9 @@ ENV VERSION=3.5.0
 
 RUN apt-get update && apt-get install -y --no-install-recommends autoconf automake gettext gcc libtool make dpkg-dev libglib2.0-dev libotr5-dev libpurple-dev libgnutls28-dev libjson-glib-dev && \
 cd && \
-curl -LO# https://get.bitlbee.org/src/bitlbee-$VERSION.tar.gz && \
-curl -LO# https://github.com/EionRobb/skype4pidgin/archive/1.2.2.tar.gz && \
-curl -LO# https://github.com/jgeboski/bitlbee-facebook/archive/v1.0.0.tar.gz && \
+curl -LO https://get.bitlbee.org/src/bitlbee-$VERSION.tar.gz && \
+curl -LO https://github.com/EionRobb/skype4pidgin/archive/1.2.2.tar.gz && \
+curl -LO https://github.com/jgeboski/bitlbee-facebook/archive/v1.0.0.tar.gz && \
 tar zxvf bitlbee-$VERSION.tar.gz && \
 cd bitlbee-$VERSION && \
 ./configure --jabber=1 --otr=1 --purple=1 && \
