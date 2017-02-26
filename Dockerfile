@@ -1,7 +1,7 @@
 FROM buildpack-deps:jessie-curl
 MAINTAINER Mikael Kermorgant <mikael@kgtech.fi>
 
-ENV VERSION=3.5.0
+ENV VERSION=3.5.1
 
 RUN apt-get update && apt-get install -y --no-install-recommends autoconf automake gettext gcc libtool make dpkg-dev libglib2.0-dev libotr5-dev libpurple-dev libgnutls28-dev libjson-glib-dev && \
 cd && \
