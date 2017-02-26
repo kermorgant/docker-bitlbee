@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  bitlbee:
+    container_name: bitlbee
+    image: kgtech/docker-bitlbee
+    volumes:
+      - ./data:/var/lib/bitlbee
